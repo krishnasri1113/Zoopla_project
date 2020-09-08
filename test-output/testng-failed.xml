@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [FunctionalTestSuite]" parallel="tests">
+  <test name="ChromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.zoopla.SearchhousesFunctionality.searchhouses">
+        <methods>
+          <include name="click_and_verify_agentname"/>
+          <include name="Loaddependcies"/>
+          <include name="enter_input_location"/>
+          <include name="SettingtheEnvironment"/>
+          <include name="SettingtheEnvironment"/>
+          <include name="quitbrowser"/>
+        </methods>
+      </class> <!-- com.zoopla.SearchhousesFunctionality.searchhouses -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.zoopla.SearchhousesFunctionality.searchhouses">
+        <methods>
+          <include name="click_and_verify_agentname"/>
+          <include name="Loaddependcies"/>
+          <include name="SettingtheEnvironment"/>
+          <include name="SettingtheEnvironment"/>
+          <include name="quitbrowser"/>
+        </methods>
+      </class> <!-- com.zoopla.SearchhousesFunctionality.searchhouses -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [FunctionalTestSuite] -->
